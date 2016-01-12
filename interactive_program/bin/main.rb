@@ -8,6 +8,7 @@ expression = gets
 mathematical_expression = ""
 
 until(expression.match(/^q$/i))
+	#puts "expression is #{expression} "
   if (expression == "\n")
     puts interactive.evaluate(mathematical_expression, binding_object)
     code = ""
